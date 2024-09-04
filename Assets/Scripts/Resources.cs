@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Resource
+public class Resource : MonoBehaviour
 {
     public string Name { get; private set; }
     public int Quantity { get; set; }
