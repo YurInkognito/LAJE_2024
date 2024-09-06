@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Resource : MonoBehaviour
 {
-    public string Name { get; private set; }
-    public int Quantity { get; set; }
+    public string Name;
+    public int Quantity;
 
     public Resource(string name, int quantity)
     {
@@ -16,8 +16,8 @@ public class Resource : MonoBehaviour
 
 public class Item
 {
-    public string Name { get; private set; }
-    public Dictionary<string, int> RequiredResources { get; private set; }
+    public string Name;
+    public Dictionary<string, int> RequiredResources;
 
     public Item(string name, Dictionary<string, int> requiredResources)
     {
