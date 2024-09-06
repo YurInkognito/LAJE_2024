@@ -25,34 +25,35 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public bool HasRequiredResources(Item item)
-    {
-        foreach (var requiredResource in item.RequiredResources)
-        {
-            if (!Resources.ContainsKey(requiredResource.Key) || Resources[requiredResource.Key].Quantity < requiredResource.Value)
-            {
-                return false;
-            }
-        }
-        return true;
-    }
+    // (Vou concertar ainda)
+    //public bool hasrequiredresources(item item)
+    //{
+    //    foreach (var requiredresource in item.requiredresources)
+    //    {
+    //        if (!resources.containskey(requiredresource.key) || resources[requiredresource.key].quantity < requiredresource.itemvalue)
+    //        {
+    //            return false;
+    //        }
+    //    }
+    //    return true;
+    //}
 
-    public void CraftItem(Item item)
-    {
-        if (HasRequiredResources(item))
-        {
-            foreach (var requiredResource in item.RequiredResources)
-            {
-                Resources[requiredResource.Key].Quantity -= requiredResource.Value;
-            }
-            CraftedItems.Add(item);
-        }
-        else
-        {
-            // Handle case where resources are insufficient
-            Debug.Log("Not enough resources to craft " + item.Name);
-        }
-    }
+    //public void craftitem(item item)
+    //{
+    //    if (hasrequiredresources(item))
+    //    {
+    //        foreach (var requiredresource in item.requiredresources)
+    //        {
+    //            resources[requiredresource.key].quantity -= requiredresource.value;
+    //        }
+    //        crafteditems.add(item);
+    //    }
+    //    else
+    //    {
+    //        // handle case where resources are insufficient
+    //        debug.log("not enough resources to craft " + item.itemname);
+    //    }
+    //}
 
     public void SellItem(Item item, int price)
     {
@@ -60,12 +61,12 @@ public class Inventory : MonoBehaviour
         {
             CraftedItems.Remove(item);
             // Implement your selling logic, e.g., add money to player's balance
-            Debug.Log(item.Name + " sold for " + price + " currency.");
+            Debug.Log(item.itemName + " sold for " + price + " currency.");
         }
         else
         {
             // Handle case where item isn't in inventory
-            Debug.Log("Item " + item.Name + " is not in the inventory.");
+            Debug.Log("Item " + item.itemName + " is not in the inventory.");
         }
     }
 }

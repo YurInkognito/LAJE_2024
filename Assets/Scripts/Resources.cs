@@ -14,14 +14,3 @@ public class Resource : MonoBehaviour
     }
 }
 
-public class Item
-{
-    public string Name;
-    public Dictionary<string, int> RequiredResources;
-
-    public Item(string name, Dictionary<string, int> requiredResources)
-    {
-        Name = name;
-        RequiredResources = requiredResources;
-    }
-}

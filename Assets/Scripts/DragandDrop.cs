@@ -8,7 +8,6 @@ public class DragandDrop : MonoBehaviour
     private Vector3 offset;
     private Camera cam;
 
-    // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
@@ -17,7 +16,6 @@ public class DragandDrop : MonoBehaviour
     void OnMouseDown()
     {
         isDragging = true;
-        // Calcule offset between the mouse position and the item's position
         offset = transform.position - GetMouseWorldPos();
     }
 
@@ -25,7 +23,6 @@ public class DragandDrop : MonoBehaviour
     {
         if (isDragging)
         {
-            // Update the item's position based on the mouse position plus the offset
             transform.position = GetMouseWorldPos() + offset;
         }
     }
@@ -38,12 +35,9 @@ public class DragandDrop : MonoBehaviour
 
     Vector3 GetMouseWorldPos()
     {
-        // COnvert mouse position to world position
         Vector3 mousePoint = Input.mousePosition;
-        mousePoint.z = cam.WorldToScreenPoint(transform.position).z; // z coordinate of the object
+        mousePoint.z = cam.WorldToScreenPoint(transform.position).z; 
         return cam.ScreenToWorldPoint(mousePoint);
     }
-    
-     
-
+   
 } //class
