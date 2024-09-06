@@ -7,6 +7,10 @@ public class Resource : MonoBehaviour
     public string Name;
     public int Quantity;
 
+    public Resource()
+    {
+    }
+
     public Resource(string name, int quantity)
     {
         Name = name;
@@ -14,12 +18,12 @@ public class Resource : MonoBehaviour
     }
 }
 
-public class Item
+public class Recurso
 {
     public string Name;
     public Dictionary<string, int> RequiredResources;
 
-    public Item(string name, Dictionary<string, int> requiredResources)
+    public Recurso(string name, Dictionary<string, int> requiredResources)
     {
         Name = name;
         RequiredResources = requiredResources;

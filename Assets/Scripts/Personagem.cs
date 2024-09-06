@@ -6,13 +6,14 @@ public class Personagem : MonoBehaviour
 {
     public string nome;           // Nome do personagem
     public int dinheiro;          // Dinheiro do personagem
-    public string dialogo;        // Diálogo do personagem
+    public string dialogo;        // Diï¿½logo do personagem
     public List<string> pedidos;  // Lista de pedidos do personagem
     public string pedidoAtual;
     public bool itemEntregue = false;
-    public GameObject janelaDePedido; // Referência à janela de pedido
-    public Text dialogoFinal; // Texto do diálogo final
+    public GameObject janelaDePedido; // Referï¿½ncia ï¿½ janela de pedido
+    public string dialogoFinal; // Texto do diï¿½logo final
     public bool todosItensEntregues = false;
+    private int itensEntregues = 0;
 
     // Inicializa o personagem com nome e dinheiro
     public void InicializarPersonagem(string nome, int dinheiroInicial)
@@ -22,24 +23,24 @@ public class Personagem : MonoBehaviour
         this.pedidos = new List<string>();
     }
 
-    // Adicionar um pedido à lista de pedidos
+    // Adicionar um pedido ï¿½ lista de pedidos
     public void AdicionarPedido(string pedido)
     {
         pedidos.Add(pedido);
     }
 
-    // Atualizar o diálogo do personagem
+    // Atualizar o diï¿½logo do personagem
     public void AtualizarDialogo(string novoDialogo)
     {
         dialogo = novoDialogo;
     }
 
-    // Exibir informações do personagem
+    // Exibir informaï¿½ï¿½es do personagem
     public void ExibirInfo()
     {
         Debug.Log("Nome: " + nome);
         Debug.Log("Dinheiro: " + dinheiro);
-        Debug.Log("Diálogo: " + dialogo);
+        Debug.Log("Dialogo: " + dialogo);
 
         Debug.Log("Pedidos:");
         foreach (var pedido in pedidos)
@@ -48,18 +49,13 @@ public class Personagem : MonoBehaviour
         }
     }
 
-    // Função para adicionar ou remover dinheiro
+    // Funï¿½ï¿½o para adicionar ou remover dinheiro
     public void AlterarDinheiro(int quantia)
     {
         dinheiro += quantia; // Adiciona ou subtrai dinheiro
     }
 
-    void Start()
-    {
-        pedidoAtual = "Anel"; // Exemplo de pedido inicial do personagem
-    }
-
-    // Método para verificar colisão com o item
+    // Mï¿½todo para verificar colisï¿½o com o item
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Item item = collision.GetComponent<Item>();
@@ -72,36 +68,14 @@ public class Personagem : MonoBehaviour
                 itemEntregue = true; // Marca que o item foi entregue
                 Debug.Log("Item entregue com sucesso!");
 
-                // Destroi o item após ser entregue
+                // Destroi o item apï¿½s ser entregue
                 Destroy(item.gameObject);
             }
             else
             {
-                Debug.Log("Este não é o item que o personagem pediu.");
+                Debug.Log("Este nï¿½o ï¿½ o item que o personagem pediu.");
             }
-        }
-    }
-
-    private int itensEntregues = 0;
-
-    void Start()
-    {
-        // Exemplo de pedidos do personagem
-        pedidos = new List<string> { "Anel", "Colar" };
-
-        // Escondendo o diálogo final no início
-        if (dialogoFinal != null)
-        {
-            dialogoFinal.gameObject.SetActive(false);
-        }
-    }
-
-    // Método para verificar colisão com o item
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Item item = collision.GetComponent<Item>();
-
-        if (item != null)
+            if (item != null)
         {
             // Se o nome do item for igual a algum pedido
             if (pedidos.Contains(item.itemName))
@@ -124,12 +98,13 @@ public class Personagem : MonoBehaviour
             }
             else
             {
-                Debug.Log("Este item não faz parte do pedido.");
+                Debug.Log("Este item nï¿½o faz parte do pedido.");
             }
+        }
         }
     }
 
-    // Método chamado quando todos os itens são entregues
+    // Mï¿½todo chamado quando todos os itens sï¿½o entregues
     private void ConcluirEntrega()
     {
         Debug.Log("Todos os itens foram entregues!");
@@ -140,23 +115,18 @@ public class Personagem : MonoBehaviour
             Destroy(janelaDePedido);
         }
 
-        // Ativar o diálogo final
-        if (dialogoFinal != null)
-        {
-            dialogoFinal.gameObject.SetActive(true);
-            dialogoFinal.text = "Obrigado por entregar todos os itens!";
-        }
+        // Ativar o diï¿½logo final
 
-        // Fazer o personagem desaparecer após um tempo
+        // Fazer o personagem desaparecer apï¿½s um tempo
         Invoke("Desaparecer", 3f); // Espera 3 segundos antes de desaparecer
     }
 
-    // Desativa ou destrói o personagem
+    // Desativa ou destrï¿½i o personagem
     private void Desaparecer()
     {
-        // Você pode desativar o personagem em vez de destruir
+        // Vocï¿½ pode desativar o personagem em vez de destruir
         gameObject.SetActive(false);
-        // Ou você pode destruí-lo completamente
+        // Ou vocï¿½ pode destruï¿½-lo completamente
         // Destroy(gameObject);
     }
 
