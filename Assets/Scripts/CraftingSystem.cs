@@ -10,10 +10,6 @@ public class CraftingSystem : MonoBehaviour
     {
         playerInventory = new Inventory();
 
-        // Example resources and items
-        playerInventory.AddResource("Gold", 10);
-        playerInventory.AddResource("Diamond", 5);
-
         Dictionary<string, int> ringRequirements = new Dictionary<string, int>
         {
             { "Gold", 2 },
