@@ -5,50 +5,45 @@ using UnityEngine.UI;
 
 public class DayNigthCicle : MonoBehaviour
 {
+<<<<<<< HEAD
     public float dayDuration = 600f; 
     public Text dayText;
+=======
+    public string dayText;
+>>>>>>> 227ba8e4373315380d6cc0e720b4a7556c1b6c36
     public GameObject nextDayButton;
     public GameObject incomeScreen;
-    public Text incomeText;
+    public string incomeText;
 
     private float currentTime;
     private bool isNight = false;
-    private int currentDay = 1;
-    private int dailyIncome = 0;
+    private int currentDay;
+    private int dailyIncome;
 
     void Start()
     {
-        currentTime = dayDuration;
         UpdateDayText();
         incomeScreen.SetActive(false);
-    }
-
-    void Update()
-    {
-        if (!isNight)
-        {
-            currentTime -= Time.deltaTime;
-            if (currentTime <= 0)
-            {
-                EnterNightMode();
-            }
-        }
     }
 
     void EnterNightMode()
     {
         isNight = true;
         nextDayButton.SetActive(true);
-        dayText.text = "The shop doesn't work at night.";
+        dayText = "The shop doesn't work at night.";
     }
 
     public void NextDay()
     {
         incomeScreen.SetActive(true);
-        incomeText.text = "Income for Day " + currentDay + ": " + dailyIncome;
+        incomeText = "Income for Day " + currentDay + ": " + dailyIncome;
 
+<<<<<<< HEAD
         currentTime = dayDuration;
         isNight = false;
+=======
+        // Reset the day cycle
+>>>>>>> 227ba8e4373315380d6cc0e720b4a7556c1b6c36
         currentDay++;
         dailyIncome = 0; 
         UpdateDayText();
@@ -58,7 +53,7 @@ public class DayNigthCicle : MonoBehaviour
 
     void UpdateDayText()
     {
-        dayText.text = "Day " + currentDay;
+        dayText = "Day " + currentDay;
     }
 
     public void AddIncome(int amount)
