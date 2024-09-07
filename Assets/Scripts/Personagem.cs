@@ -25,7 +25,6 @@ public class Character : MonoBehaviour
         {
             // Entregar o item pedido
             Destroy(collision.gameObject);
-         // GetComponent<AudioSource>().Play();
             // Ações adicionais ao entregar o item
             ConfirmDelivery();
         }
