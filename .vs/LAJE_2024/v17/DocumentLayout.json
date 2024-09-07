@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|c:\\users\\drag2\\onedrive\\\u00E1rea de trabalho\\teste\\laje_2024\\assets\\scripts\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|c:\\users\\drag2\\onedrive\\\u00E1rea de trabalho\\teste\\laje_2024\\assets\\scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\assets\\scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|c:\\users\\drag2\\onedrive\\\u00E1rea de trabalho\\teste\\laje_2024\\assets\\scripts\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Dialogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Dialogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\assets\\scripts\\craftingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\craftingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Personagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Personagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\DragandDrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\DragandDrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\DayNightCicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\DayNightCicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\assets\\scripts\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F248E4-99D3-6097-F6DD-5D29152EE5C9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Dialogo.cs",
-              "DocumentMoniker": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Dialogo.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogo.cs",
-              "ToolTip": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Dialogo.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Dialogo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T18:29:45.815Z",
-              "IsPinned": true
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -69,23 +36,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Item.cs",
               "ToolTip": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Item.cs",
               "RelativeToolTip": "Assets\\Scripts\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-06T00:35:04.695Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Draggable.cs",
-              "DocumentMoniker": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Draggable.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Draggable.cs",
-              "ToolTip": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Draggable.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Draggable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T19:18:53.474Z",
               "EditorCaption": ""
             },
             {
@@ -102,77 +56,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Resource.cs",
-              "DocumentMoniker": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Resource.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Resource.cs",
-              "ToolTip": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Resource.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Resource.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Draggable.cs",
+              "DocumentMoniker": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Draggable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Draggable.cs",
+              "ToolTip": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Draggable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Draggable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:44:15.389Z",
+              "WhenOpened": "2024-09-07T19:18:53.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Inventory.cs",
               "DocumentMoniker": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Inventory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory.cs",
               "ToolTip": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Inventory.cs",
               "RelativeToolTip": "Assets\\Scripts\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-06T00:06:55.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Personagem.cs",
-              "DocumentMoniker": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Personagem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Personagem.cs",
-              "ToolTip": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\Personagem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Personagem.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAAwGkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T00:27:26.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DayNightCicle.cs",
-              "DocumentMoniker": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\DayNightCicle.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DayNightCicle.cs",
-              "ToolTip": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\DayNightCicle.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DayNightCicle.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T00:13:29.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DragandDrop.cs",
-              "DocumentMoniker": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\DragandDrop.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DragandDrop.cs",
-              "ToolTip": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\DragandDrop.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DragandDrop.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T00:06:54.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "CraftingSystem.cs",
               "DocumentMoniker": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\CraftingSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CraftingSystem.cs",
               "ToolTip": "C:\\Users\\drag2\\OneDrive\\\u00C1rea de Trabalho\\Teste\\LAJE_2024\\Assets\\Scripts\\CraftingSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\CraftingSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T00:06:11.598Z"
+              "WhenOpened": "2024-09-06T00:06:11.598Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -4,20 +4,41 @@ using UnityEngine;
 
 public class CraftingSystem : MonoBehaviour
 {
-    public Inventory playerInventory;
+    public int resourceAQuantity = 0;
+    public int resourceBQuantity = 0;
 
-    void Start()
+    public int craftedItemQuantity = 0;
+
+    public void CraftItem()
     {
-        playerInventory = new Inventory();
-
-        Dictionary<string, int> ringRequirements = new Dictionary<string, int>
+        if (resourceAQuantity >= 2 && resourceBQuantity >= 1)
         {
-            { "Gold", 2 },
-            { "Diamond", 1 }
-        };
+            resourceAQuantity -= 2;
+            resourceBQuantity -= 1;
+            craftedItemQuantity++;
 
-        Item diamondRing = new Item("Diamond Ring", ringRequirements);
-
+            Debug.Log("Item crafted successfully!");
+        }
+        else
+        {
+            Debug.Log("Not enough resources to craft the item.");
+        }
     }
 
+    public void AddResourceA(int amount)
+    {
+        resourceAQuantity += amount;
+    }
+
+    public void AddResourceB(int amount)
+    {
+        resourceBQuantity += amount;
+    }
+
+    public void ResetCraftingSystem()
+    {
+        resourceAQuantity = 0;
+        resourceBQuantity = 0;
+        craftedItemQuantity = 0;
+    }
 }
