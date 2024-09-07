@@ -1,25 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
 
 public class Character : MonoBehaviour
 {
     public string characterName;
-    public int money;
-    public string order;
-    public string dialogue;
-    public bool orderDelivered;
+    public int dinheiro;
+    public string pedido;
+    public string dialogo;
+    public bool pedidoEntregue;
+    public string targetTag;
 
     private void Start()
     {
         // Exemplo de inicialização das variáveis na Unity
-        characterName = "João";
-        money = 100;
-        order = "Espada Mágica";
-        dialogue = "Olá, comerciante! Estou precisando de uma Espada Mágica, você pode me fornecer uma?";
+        characterName = "Yuri";
+        dinheiro = 100;
+        pedido = "Espada Mágica";
+        dialogo = "Olá, comerciante! Estou precisando de uma Espada Mágica, você poderia me fazer uma?";
+        targetTag = "ItemCraftado"; // Defina a tag do objeto alvo do pedido
+    }
 
-        orderDelivered = false;
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == targetTag)
+        {
+            // Entregar o item pedido
+            Destroy(collision.gameObject);
+         // GetComponent<AudioSource>().Play();
+            // Ações adicionais ao entregar o item
+            ConfirmDelivery();
+        }
+    }
+
+    private void ConfirmDelivery()
+    {
+        Debug.Log("Item entregue: " + pedido);
+        pedidoEntregue = true;
+        // Lógica adicional de confirmação, como alterar diálogos, recompensas, etc.
     }
 }
