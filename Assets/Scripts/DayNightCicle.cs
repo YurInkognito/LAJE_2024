@@ -5,12 +5,9 @@ using UnityEngine.UI;
 
 public class DayNigthCicle : MonoBehaviour
 {
-<<<<<<< HEAD
+
     public float dayDuration = 600f; 
-    public Text dayText;
-=======
     public string dayText;
->>>>>>> 227ba8e4373315380d6cc0e720b4a7556c1b6c36
     public GameObject nextDayButton;
     public GameObject incomeScreen;
     public string incomeText;
@@ -38,12 +35,9 @@ public class DayNigthCicle : MonoBehaviour
         incomeScreen.SetActive(true);
         incomeText = "Income for Day " + currentDay + ": " + dailyIncome;
 
-<<<<<<< HEAD
         currentTime = dayDuration;
         isNight = false;
-=======
-        // Reset the day cycle
->>>>>>> 227ba8e4373315380d6cc0e720b4a7556c1b6c36
+
         currentDay++;
         dailyIncome = 0; 
         UpdateDayText();

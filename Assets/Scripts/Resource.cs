@@ -18,8 +18,6 @@ public class Resource : MonoBehaviour
     }
 }
 
-<<<<<<< HEAD:Assets/Scripts/Resources.cs
-=======
 public class Recurso
 {
     public string Name;
@@ -31,4 +29,3 @@ public class Recurso
         RequiredResources = requiredResources;
     }
 }
->>>>>>> 227ba8e4373315380d6cc0e720b4a7556c1b6c36:Assets/Scripts/Resource.cs

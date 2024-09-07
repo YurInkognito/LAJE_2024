@@ -22,8 +22,6 @@ public class CraftingSystem : MonoBehaviour
 
         Item diamondRing = new Item("Diamond Ring", ringRequirements);
 
-        // Crafting an item
-        //playerInventory.CraftItem(diamondRing); (Vou concertar ainda)
     }
 
 }
