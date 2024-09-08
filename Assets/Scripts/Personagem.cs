@@ -1,39 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Character : MonoBehaviour
 {
     public string characterName;
     public int dinheiro;
-    public string pedido;
+    public List<string> pedido;
     public string dialogo;
     public bool pedidoEntregue;
-    public string targetTag;
+    public List<string> targetTags;
 
-    private void Start()
+     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Exemplo de inicialização das variáveis na Unity
-        characterName = "Yuri";
-        dinheiro = 100;
-        pedido = "Espada Mágica";
-        dialogo = "Olá, comerciante! Estou precisando de uma Espada Mágica, você poderia me fazer uma?";
-        targetTag = "ItemCraftado"; // Defina a tag do objeto alvo do pedido
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == targetTag)
+        // Verifica se a tag do objeto colidido está na lista de tags alvo
+        if (targetTags.Contains(collision.gameObject.tag))
         {
-            // Entregar o item pedido
             Destroy(collision.gameObject);
-            // Ações adicionais ao entregar o item
+            Debug.Log("Item entregue!");
             ConfirmDelivery();
         }
+        else
+        {
+            Debug.Log("Objeto colidido não é o alvo.");
+        }
     }
-
     private void ConfirmDelivery()
     {
         Debug.Log("Item entregue: " + pedido);
-        pedidoEntregue = true;
         // Lógica adicional de confirmação, como alterar diálogos, recompensas, etc.
     }
 }
