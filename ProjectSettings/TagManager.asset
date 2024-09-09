@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - AmeRef
-  - EsmBru
-  - RubGem
+  - AmeR
+  - EsmB
+  - RubG
   layers:
   - Default
   - TransparentFX
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: Recurso
     uniqueID: 1675034387
+    locked: 0
+  - name: UI
+    uniqueID: 3567726053
     locked: 0

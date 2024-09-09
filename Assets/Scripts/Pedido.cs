@@ -4,19 +4,47 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public List<int>Qtdpedidos;
-    public bool pedido1Entregue;
-    public bool pedido2Entregue;
-    public bool pedido3Entregue;
-    public bool PedidoCompleto;
+    public string item1;
+    public string item2;
+    public string item3;
+    public GameObject pedido1;
+    public GameObject pedido2;
+    public GameObject pedido3;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        
+        // Subscribe to the OnObjectDestroyed event
+        Item.Vendido += ConfirmaVenda;
     }
-    // Update is called once per frame
-    void Update()
+
+    void OnDisable()
     {
-    
+        // Unsubscribe from the OnObjectDestroyed event to avoid memory leaks
+        Item.Vendido -= ConfirmaVenda;
+    }
+    void ConfirmaVenda(string itemVendido)
+    {
+        if (itemVendido == item1)
+        {
+            if (pedido1 != null)
+            {
+                pedido1.SetActive(false);
+            }
+        }
+        else if (itemVendido == item2)
+        {
+            if (pedido2 != null)
+            {
+                pedido2.SetActive(false);
+            }
+        }
+        else if (itemVendido == item3)
+        {
+            if (pedido3 != null)
+            {
+                pedido3.SetActive(false);
+            }
+        }
+       
     }
 }

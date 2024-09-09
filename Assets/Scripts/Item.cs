@@ -1,12 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
-[System.Serializable]
-public class Item
+using System;
+public class Item: MonoBehaviour
 {
-    public string itemName;
+    public static event Action<string> Vendido;
     public int itemValue;
-    public int quantity;
+    public string itemTag;
+    public Jogador jogador;
+
+    void OnDestroy()
+    {
+        Vendido?.Invoke(itemTag);
+        
+        if (jogador != null)
+        {
+            jogador.DinheiroTotal += itemValue;
+        }
+    }
 }

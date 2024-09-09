@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638614168862791218
-    m_Hash: 2405387192
+      ticks: 638614198377464202
+    m_Hash: 947626093
   m_LockFileStatus:
     m_FilePath: "C:/Users/pedro/OneDrive/\xC1rea de Trabalho/Laje/Nova pasta/LAJE_2024/Assets/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638614168866813107
-    m_Hash: 517873031
+      ticks: 638614198377474206
+    m_Hash: 28772972
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
