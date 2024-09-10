@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
@@ -10,16 +11,17 @@ public class NewBehaviourScript : MonoBehaviour
     public GameObject pedido1;
     public GameObject pedido2;
     public GameObject pedido3;
-    // Start is called before the first frame update
+    public GameObject CaixaDialogo;
+    public Character cliente;
+    
     void OnEnable()
     {
-        // Subscribe to the OnObjectDestroyed event
+        
         Item.Vendido += ConfirmaVenda;
     }
 
     void OnDisable()
-    {
-        // Unsubscribe from the OnObjectDestroyed event to avoid memory leaks
+    {       
         Item.Vendido -= ConfirmaVenda;
     }
     void ConfirmaVenda(string itemVendido)
@@ -45,6 +47,23 @@ public class NewBehaviourScript : MonoBehaviour
                 pedido3.SetActive(false);
             }
         }
+    }
+    void Update()
+    {
+       if (pedido1.activeSelf == false && pedido2.activeSelf == false && pedido3.activeSelf == false)
+       {           
+            Debug.Log("cabou a venda");
+            cliente.compraFim = true;
+            CaixaDialogo.SetActive(true);
+            Destroy(gameObject);
+            Destroy(pedido1);
+            Destroy(pedido2);
+            Destroy(pedido3);
+       }
+       else
+       {
+       }
        
     }
+    
 }

@@ -2,49 +2,63 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class Dialogo : MonoBehaviour
 {
-    public GameObject[] dialogos; // Drag each dialogue text GameObject here
-    public int currentTextIndex = 0;    // Index to keep track of current text
+    public GameObject[] dialogos; 
+    public int currentTextIndex = 0;    
+    public List<int> dialogoFim;
+    public int clienteSai;    
+    public GameObject CaixaDialogo;
+    public Character Cliente;
+    public int aparecePedido;
 
-    // Método para ser chamado ao clicar no botão de "Skip"
-   void OnEnable()
+    void OnEnable()
     {
-        // Iterate through each object and enable it
-        foreach (GameObject obj in dialogos)
-        {
-            if (obj != null) // Check if the object is assigned
-            {
-                obj.SetActive(true); // Enable the object
-            }
-        }
-        
+        dialogos[currentTextIndex].SetActive(true);
         Debug.Log("Objects enabled!");
     }
- public void OnSkipButtonClicked()
+
+
+    void OnMouseDown()
     {
-        // Check if the current text index is within bounds
-        if (currentTextIndex < dialogos.Length)
+        if (currentTextIndex == aparecePedido)
         {
-            // Disable the current text
+        Cliente.ativar[1].SetActive(true);
+        }
+            if (dialogoFim.Contains(currentTextIndex))
+            {
+                CaixaDialogo.SetActive(false);
+                dialogos[currentTextIndex].SetActive(false);
+                currentTextIndex++;
+
+                Debug.Log("deletowww");
+            }
+            else if (currentTextIndex < dialogos.Length)
+        {
+
             dialogos[currentTextIndex].SetActive(false);
             
-            // Increment the index to show the next text
             currentTextIndex++;
 
-            // Check if there is a next text to show
             if (currentTextIndex < dialogos.Length)
             {
-                // Enable the next text
                 dialogos[currentTextIndex].SetActive(true);
             }
             else
             {
-                // If no more texts, you can end the dialogue or loop
                 Debug.Log("End of dialogue.");
             }
             Debug.Log("Skip button clicked!");
+        }
+            
+    }
+    void OnDisable()
+    {
+        if (clienteSai == currentTextIndex)
+        {
+            Cliente.vaiEmbora = true;
         }
     }
 }
