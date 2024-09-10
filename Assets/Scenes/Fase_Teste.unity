@@ -133,9 +133,8 @@ GameObject:
   - component: {fileID: 10339042}
   - component: {fileID: 10339043}
   - component: {fileID: 10339045}
-  - component: {fileID: 10339044}
   m_Layer: 0
-  m_Name: porta
+  m_Name: portaAnim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -177,18 +176,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &10339044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10339041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14f05d38f368c17409ac062aa44b1a23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &10339045
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -229,7 +216,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d0bacf0aefe82994398933606eef4223, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -495,7 +482,7 @@ GameObject:
   - component: {fileID: 184896134}
   - component: {fileID: 184896133}
   m_Layer: 0
-  m_Name: Pedido1
+  m_Name: Pedido1.1
   m_TagString: AmeR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -539,8 +526,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -727241243
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf195923352fdb2419a59ebd7f17ccb1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -579,6 +566,7 @@ GameObject:
   - component: {fileID: 236436139}
   - component: {fileID: 236436142}
   - component: {fileID: 236436144}
+  - component: {fileID: 236436145}
   m_Layer: 0
   m_Name: CaixaDialogo2
   m_TagString: Untagged
@@ -595,15 +583,15 @@ RectTransform:
   m_GameObject: {fileID: 236436137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 12.097}
-  m_LocalScale: {x: 0.3900267, y: 0.3900267, z: 0}
+  m_LocalScale: {x: 0.58504003, y: 0.58504003, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1467534346}
-  m_Father: {fileID: 1900734361}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4133335, y: -4.4666667}
+  m_AnchoredPosition: {x: 1.09, y: -2.95}
   m_SizeDelta: {x: 15.71, y: 6.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &236436142
@@ -703,6 +691,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.8177757, y: 3.8849616}
   m_EdgeRadius: 0
+--- !u!114 &236436145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236436137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695a398a56e62024d96f19933531b596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 1635232882}
+  - {fileID: 432668322}
+  - {fileID: 2074113249}
+  - {fileID: 766803923}
+  currentTextIndex: 0
+  dialogoFim: 0100000003000000
+  clienteSai: 3
+  CaixaDialogo: {fileID: 236436137}
+  Cliente: {fileID: 1900734357}
+  aparecePedido: 1
 --- !u!1 &390888211
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +993,7 @@ GameObject:
   - component: {fileID: 636515391}
   - component: {fileID: 636515390}
   m_Layer: 0
-  m_Name: Pedido2
+  m_Name: Pedido2.2
   m_TagString: EsmB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1026,8 +1037,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -727241243
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 24c9b65a6c327c04dbd7b6f9a8580924, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1972,7 +1983,6 @@ GameObject:
   - component: {fileID: 1212030731}
   - component: {fileID: 1212030732}
   - component: {fileID: 1212030733}
-  - component: {fileID: 1212030734}
   m_Layer: 0
   m_Name: Cliente1
   m_TagString: Untagged
@@ -2045,7 +2055,6 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1922448057}
   - {fileID: 1838552642}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2144,29 +2153,8 @@ MonoBehaviour:
   - {fileID: 1922448053}
   - {fileID: 1838552640}
   proxCliente: {fileID: 1900734356}
---- !u!114 &1212030734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212030727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 695a398a56e62024d96f19933531b596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogos:
-  - {fileID: 1858585508}
-  - {fileID: 1689845185}
-  - {fileID: 390888211}
-  - {fileID: 1865620840}
-  currentTextIndex: 0
-  dialogoFim: 0100000003000000
-  clienteSai: 3
-  CaixaDialogo: {fileID: 1922448053}
-  Cliente: {fileID: 1212030733}
-  aparecePedido: 1
+  porta: {fileID: 10339041}
+  spawnTime: 1
 --- !u!1 &1339354649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,7 +2166,7 @@ GameObject:
   - component: {fileID: 1339354651}
   - component: {fileID: 1339354650}
   m_Layer: 0
-  m_Name: Pedido1
+  m_Name: Pedido1.2
   m_TagString: AmeR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2222,8 +2210,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -727241243
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf195923352fdb2419a59ebd7f17ccb1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2394,6 +2382,90 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2497609, y: 1.3914077}
   m_EdgeRadius: 0
+--- !u!1 &1404590138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404590140}
+  - component: {fileID: 1404590139}
+  m_Layer: 0
+  m_Name: porta
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1404590139
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404590138}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d0bacf0aefe82994398933606eef4223, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.75, y: 6.28}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1404590140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404590138}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.64, y: 2.52, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467534345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,7 +3723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30, y: -199}
+  m_AnchoredPosition: {x: 26, y: -193}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1858585510
@@ -3737,7 +3809,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -180.68117, y: -8.12059, z: -219.24161, w: -150.23216}
+  m_margin: {x: -180.68117, y: -8.12059, z: -189.99048, w: -150.23216}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3898,7 +3970,6 @@ GameObject:
   - component: {fileID: 1900734359}
   - component: {fileID: 1900734358}
   - component: {fileID: 1900734357}
-  - component: {fileID: 1900734362}
   m_Layer: 0
   m_Name: Cliente2
   m_TagString: Untagged
@@ -3929,6 +4000,8 @@ MonoBehaviour:
   - {fileID: 236436137}
   - {fileID: 951184390}
   proxCliente: {fileID: 0}
+  porta: {fileID: 10339041}
+  spawnTime: 1
 --- !u!50 &1900734358
 Rigidbody2D:
   serializedVersion: 4
@@ -4066,33 +4139,9 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 236436139}
   - {fileID: 951184393}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1900734362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1900734356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 695a398a56e62024d96f19933531b596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogos:
-  - {fileID: 1635232882}
-  - {fileID: 432668322}
-  - {fileID: 2074113249}
-  - {fileID: 766803923}
-  currentTextIndex: 0
-  dialogoFim: 0100000003000000
-  clienteSai: 3
-  CaixaDialogo: {fileID: 236436137}
-  Cliente: {fileID: 1900734357}
-  aparecePedido: 1
 --- !u!1 &1919915273
 GameObject:
   m_ObjectHideFlags: 0
@@ -4104,7 +4153,7 @@ GameObject:
   - component: {fileID: 1919915275}
   - component: {fileID: 1919915274}
   m_Layer: 0
-  m_Name: Pedido2
+  m_Name: Pedido2.1
   m_TagString: EsmB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4148,8 +4197,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -727241243
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 24c9b65a6c327c04dbd7b6f9a8580924, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4187,7 +4236,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1922448057}
   - component: {fileID: 1922448056}
-  - component: {fileID: 1922448054}
+  - component: {fileID: 1922448059}
+  - component: {fileID: 1922448060}
   m_Layer: 0
   m_Name: CaixaDialogo1
   m_TagString: Untagged
@@ -4195,51 +4245,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!61 &1922448054
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922448053}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 6.642828, y: -2.246309}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 15.71, y: 6.84}
-    newSize: {x: 15.71, y: 6.84}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.8177757, y: 3.8849616}
-  m_EdgeRadius: 0
 --- !u!212 &1922448056
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4301,17 +4306,85 @@ RectTransform:
   m_GameObject: {fileID: 1922448053}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 12.097}
-  m_LocalScale: {x: 0.3900267, y: 0.3900267, z: 0}
+  m_LocalScale: {x: 0.58504003, y: 0.58504003, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 717750475}
-  m_Father: {fileID: 1212030730}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4133335, y: -3.3333333}
+  m_AnchoredPosition: {x: 1.09, y: -2.95}
   m_SizeDelta: {x: 15.71, y: 6.84}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &1922448059
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922448053}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 6.730279, y: -2.2652073}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 15.71, y: 6.84}
+    newSize: {x: 15.71, y: 6.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.382042, y: 3.703558}
+  m_EdgeRadius: 0
+--- !u!114 &1922448060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922448053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695a398a56e62024d96f19933531b596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogos:
+  - {fileID: 1858585508}
+  - {fileID: 1689845185}
+  - {fileID: 390888211}
+  - {fileID: 1865620840}
+  currentTextIndex: 0
+  dialogoFim: 0100000003000000
+  clienteSai: 3
+  CaixaDialogo: {fileID: 1922448053}
+  Cliente: {fileID: 1212030733}
+  aparecePedido: 1
 --- !u!1 &2024995385
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,7 +4639,7 @@ GameObject:
   - component: {fileID: 2061106479}
   - component: {fileID: 2061106478}
   m_Layer: 0
-  m_Name: Pedido3
+  m_Name: Pedido3.1
   m_TagString: RubG
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4610,8 +4683,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -727241243
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 74ccf8a75b17983448fb2bd864bf96a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4784,7 +4857,7 @@ GameObject:
   - component: {fileID: 2075212345}
   - component: {fileID: 2075212344}
   m_Layer: 0
-  m_Name: Pedido3
+  m_Name: Pedido3.2
   m_TagString: RubG
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4828,8 +4901,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -727241243
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 74ccf8a75b17983448fb2bd864bf96a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4865,7 +4938,9 @@ SceneRoots:
   - {fileID: 158501734}
   - {fileID: 2057333292}
   - {fileID: 1212030730}
+  - {fileID: 1922448057}
   - {fileID: 1900734361}
+  - {fileID: 236436139}
   - {fileID: 1519442672}
   - {fileID: 752339844}
   - {fileID: 1477409963}
@@ -4875,6 +4950,7 @@ SceneRoots:
   - {fileID: 1184512721}
   - {fileID: 1628539936}
   - {fileID: 1143962019}
+  - {fileID: 1404590140}
   - {fileID: 10339042}
   - {fileID: 1532859426}
   - {fileID: 1004867740}

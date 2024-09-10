@@ -14,6 +14,8 @@ public class Character : MonoBehaviour
     public List<string> targetTags;
     public GameObject[] ativar;
     public GameObject proxCliente;
+    public GameObject porta;
+    public float spawnTime = 1f;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -24,25 +26,26 @@ public class Character : MonoBehaviour
         }
         else
         {
-            Debug.Log("Objeto colidido não é o alvo.");
+
         }
     }
     void Update()
     {
         if (compraFim == true && vaiEmbora == true)
         {
-            Destroy(gameObject);
-            proxCliente.SetActive(true);
+            porta.SetActive(true);
+            Invoke ("Spawn", spawnTime);
         }
+    }
+    void Spawn()
+    {
+        Destroy(gameObject);
+        proxCliente.SetActive(true);
     }
     void OnEnable()
     {
+        porta.SetActive(false);
         ativar[0].SetActive(true);         
         Debug.Log("Objects enabled!");
-    }
-    void OnDisable()
-    {
-        
-        Debug.Log("Objects disabled!");
     }
 }
